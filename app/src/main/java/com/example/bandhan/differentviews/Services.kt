@@ -5,7 +5,17 @@ object Services {
             Categories("North Indian","northindian"),
             Categories("South Indian","southinidan"),
             Categories("Chinese","chinese"),
-            Categories("Desserts","desserts"),
+            Categories("Desserts","dessert"),
+            Categories("Drinks","drinks"),
+            Categories("North Indian","northindian"),
+            Categories("South Indian","southinidan"),
+            Categories("Chinese","chinese"),
+            Categories("Desserts","dessert"),
+            Categories("Drinks","drinks"),
+            Categories("North Indian","northindian"),
+            Categories("South Indian","southinidan"),
+            Categories("Chinese","chinese"),
+            Categories("Desserts","dessert"),
             Categories("Drinks","drinks")
     )
     val north = listOf(
