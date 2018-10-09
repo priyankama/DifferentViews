@@ -1,5 +1,5 @@
 package com.example.bandhan.differentviews
 
-class Foods(title: String,price:String,image:String) {
+class Foods(val title: String,val price: String,val image:String) {
 
 }

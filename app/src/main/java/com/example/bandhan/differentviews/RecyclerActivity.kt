@@ -1,8 +1,10 @@
 package com.example.bandhan.differentviews
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import com.example.bandhan.differentviews.Utilities.EXTRA_CATEGORY
 import kotlinx.android.synthetic.main.activity_recycler.*
 import kotlinx.android.synthetic.main.custom_food_layout.*
 
@@ -13,7 +15,9 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler)
         adapter = RecyclerAdapter(this, Services.foodcategories){categories ->
-            println(categories.title)
+           val intent = Intent(this,ProductActivity::class.java)
+           intent.putExtra(EXTRA_CATEGORY,categories.title)
+            startActivity(intent)
         }
         recycler_food_list.adapter = adapter
 
